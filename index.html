@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vibe Coding in the Workplace</title>
+    <link rel="icon" href="/media/shaka_icon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="https://en.wikipedia.org/wiki/Vibe_coding">Vibe Coding</a>
+        |
+        <a href="https://en.wikipedia.org/wiki/AI-assisted_software_development">AI Assited SWE</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Vibe Coding in the Workplace</h1>
+      <hr>
+      <div id="content">
+        <h2>TO-DO</h2>
+        <ul>
+          <li>Priorities</li>
+          <li>Brainstorming</li>
+          <li>What kind of models should we use?</li>
+        </ul>
+      </div>
+      <hr>   
+
+      <span>
+        <h3>Priorities</h3>
+        <ol>
+          <li>Searching for all the models</li>
+          <li>Finding out which model to use</li>
+          <li>Choosing the best model and using it</li>
+        </ol>
+      </span>
+
+      <section id="models">
+        <h3>Brainstorm: what kind of models should we use?</h3>
+        <p>Some used <b>models</b> include: <em>ChatGPT, Gemini, Codex, Claude...</em></p>
+      </section>
+
+      <section id="conclusion">
+        <h3>What kind of models should we use?</h3>
+        <p>We should use <strong>no models</strong> because we do not know if they will help us.<br>
+        Furthermore, we have no idea what project we want to do so we should probably <br> 
+        figure that out before finding a good model.
+        </p>
+      </section>
+      <hr>
+      <section id="relax">
+        Now that the meeting is over, here is some content to relax <br>
+        This is my brother and I scuba diving at la jolla shores <br>
+        <video controls width="250">
+          <source src="/media/lobster_la_jolla.mp4" type="video/mp4" />
+        </video>
+        <figure>
+          <figcaption>My favorite audio:</figcaption>
+          <audio controls src="/media/collapse.mp3"></audio>
+        </figure>
+
+        <img
+          class="fit-picture"
+          width="200"
+          height="200"
+          src="/media/shaka.webp"/>
+      </section>
+    </main>
+    
+    <footer>
+      <hr>
+
+      <details>
+        <summary>What are your thoughts on <i>vibe coding</i>?</summary>
+
+        <form>
+          <label>Enter name and date</label>
+          <br>
+          <input type="text" required/>
+          <br>
+          <input type="date" required/>
+
+          <br>
+          <label for="story">Tell us your thoughts</label>
+          <br>
+          <textarea id="story" name="story" rows="5" cols="33"></textarea>
+          <br>
+          <fieldset>
+            <legend>Did you stay the whole meeting?</legend>
+            <input type="radio" />
+            <label>Yes</label><br />
+            <input type="radio" />
+            <label>No</label><br />
+          </fieldset>
+          <fieldset>
+            <legend>Choose your favorite LLMs</legend>
+            <input type="checkbox" />
+            <label>ChatGPT</label><br />
+            <input type="checkbox" />
+            <label>Claude</label><br />
+            <input type="checkbox" />
+            <label>Gemini</label><br />
+            <input type="checkbox" />
+            <label>Codex</label><br />
+          </fieldset>
+          
+          <label for="LLM-decision">Should we vibe code?</label> 
+          <br>
+          <select id="LLM-decision">
+            <option value="">--Please choose an option--</option>
+            <option>Yes we shouldn't write a single line of code</option>
+            <option>Yes but cautiously</option>
+            <option>Absolutely not</option>
+          </select>
+          <br>
+
+          <label for="model-choice">If yes, what model should we use?</label>
+          <br>
+          <input list="models-options" id="model-choice" name="model-choice" />
+          
+          <datalist id="models-options">
+            <option value="ChatGPT"></option>
+            <option value="Claude"></option>
+            <option value="Gemini"></option>
+            <option value="Codex"></option>
+          </datalist>
+
+          <br>
+          <button type="submit">Submit</button>
+        </form>
+          
+      </details>
+
+    </footer>
+  </body>
+</html>
