@@ -1,0 +1,28 @@
+
+.saira-stencil-cool_font {
+    font-family: "Saira Stencil", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    text-align: center;
+}
+
+#page-background {
+    background: hsl(214, 99%, 69%);
+}
+
+.break {
+    border: none;
+    border-top: 4px solid rgb(0, 255, 17);
+}
+
+:root{
+    --brand: hsl(214, 99%, 69%);
+}
+
+#audio {
+    background-color: var(--brand, color(display-p3 0 1 0));
+    
+}

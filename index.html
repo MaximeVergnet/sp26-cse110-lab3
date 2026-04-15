@@ -4,10 +4,20 @@
     <meta charset="UTF-8">
     <title>Vibe Coding in the Workplace</title>
     <link rel="icon" href="./media/shaka_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil:ital@0;1&display=swap" rel="stylesheet">
   </head>
-  <body>
+  <style>
+    #priorities{
+      color:crimson;
+      text-decoration: underline;
+    }
+  </style>
+  <body id="page-background">
     <header>
-      <nav>
+      <nav style="background: color-mix(in oklab, hotpink 70%, white 30%)">
         <a href="https://en.wikipedia.org/wiki/Vibe_coding">Vibe Coding</a>
         |
         <a href="https://en.wikipedia.org/wiki/AI-assisted_software_development">AI Assited SWE</a>
@@ -15,19 +25,19 @@
     </header>
 
     <main>
-      <h1>Vibe Coding in the Workplace</h1>
-      <hr>
+      <h1 class="saira-stencil-cool_font">Vibe Coding in the Workplace</h1>
+      <hr class="break">
       <div id="content">
         <h2>TO-DO</h2>
         <ul>
-          <li>Priorities</li>
+          <li id="priorities">Priorities</li>
           <li>Brainstorming</li>
           <li>What <span>kind of models</span> should we use?</li>
         </ul>
       </div>
-      <hr>   
+      <hr class="break">   
 
-      <h3>Priorities</h3>
+      <h3 style="color: #FF0000;">Priorities</h3>
       <ol>
         <li>Searching for all the models</li>
         <li>Finding out which model to use</li>
@@ -46,7 +56,7 @@
         figure that out before finding a good model.
         </p>
       </section>
-      <hr>
+      <hr class="break">
       <section id="relax">
         <div>Now that the meeting is over, here is some content to relax <br>
         This is my brother and I scuba diving at la jolla shores <br></div>
@@ -55,7 +65,7 @@
         </video>
         <figure>
           <figcaption>My favorite audio:</figcaption>
-          <audio controls src="./media/collapse.mp3"></audio>
+          <audio id="audio" controls src="./media/collapse.mp3"></audio>
         </figure>
 
         <img
@@ -68,7 +78,7 @@
     </main>
     
     <footer>
-      <hr>
+      <hr class="break">
 
       <details>
         <summary>What are your thoughts on <i>vibe coding</i>?</summary>
