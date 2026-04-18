@@ -11,6 +11,7 @@
 
 #page-background {
     background: hsl(214, 99%, 69%);
+    
 }
 
 .break {
@@ -24,6 +25,7 @@
 
 #audio {
     background-color: var(--brand, color(display-p3 0 1 0));
+    
 }
 
 
