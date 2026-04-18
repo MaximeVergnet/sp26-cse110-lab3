@@ -11,7 +11,6 @@
 
 #page-background {
     background: hsl(214, 99%, 69%);
-    
 }
 
 .break {
@@ -40,6 +39,19 @@
     border-style: solid;
 }
 
+
+@media (hover: hover) {
+  button:hover {
+    color: rgb(216, 185, 12);
+    background: black;
+  }
+}
+
+button:active{
+    font-weight: bold;
+    box-shadow: 3px;
+}
+
 .media {
     display: inline-block;
     margin: 10mm;
@@ -64,4 +76,26 @@
 
 .box {
     position: static;
+}
+
+#navbar {
+    background: color-mix(in oklab, hotpink 70%, white 30%); 
+    position: relative; 
+    top: 4px;
+    left: 4px; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+
+.link {
+    padding: 4px;
+}
+
+#form-grid {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    row-gap: 10px;
+    column-gap: 5px;
 }
