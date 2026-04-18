@@ -11,11 +11,12 @@
 
 #page-background {
     background: hsl(214, 99%, 69%);
+    
 }
 
 .break {
     border: none;
-    border-top: 4px solid rgb(0, 255, 17);
+    border-top: 0.5vh solid rgb(0, 255, 17);
 }
 
 :root{
@@ -25,4 +26,43 @@
 #audio {
     background-color: var(--brand, color(display-p3 0 1 0));
     
+}
+
+
+.button-container {
+    display: block;
+    padding: 0.5rem;
+}
+
+.button {
+    border-color: gold;
+    border-radius: 8px;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.media {
+    display: inline-block;
+    margin: 10mm;
+    margin-bottom: 0.5cm;
+}
+
+.field-select {
+    width: fit-content;    
+    height: fit-content;
+    padding: 10px;
+}
+
+#story {
+    max-width: 300px;
+    min-width: 150px;
+    max-height: 200px;
+    min-height: 50px;
+    width: 200px;
+    height: 100px;
+    margin: auto;
+}
+
+.box {
+    position: static;
 }

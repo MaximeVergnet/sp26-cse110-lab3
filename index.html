@@ -17,7 +17,8 @@
   </style>
   <body id="page-background">
     <header>
-      <nav style="background: color-mix(in oklab, hotpink 70%, white 30%)">
+      <nav style="background: color-mix(in oklab, hotpink 70%, white 30%); position: relative; top: 4px;
+left: 4px;">
         <a href="https://en.wikipedia.org/wiki/Vibe_coding">Vibe Coding</a>
         |
         <a href="https://en.wikipedia.org/wiki/AI-assisted_software_development">AI Assited SWE</a>
@@ -60,27 +61,28 @@
       <section id="relax">
         <div>Now that the meeting is over, here is some content to relax <br>
         This is my brother and I scuba diving at la jolla shores <br></div>
-        <video controls width="250">
+        <video class="media" controls width="275em">
           <source src="./media/lobster_la_jolla.mp4" type="video/mp4">
         </video>
-        <figure>
-          <figcaption>My favorite audio:</figcaption>
-          <audio id="audio" controls src="./media/collapse.mp3"></audio>
-        </figure>
-
         <img
-          class="fit-picture"
-          width="200"
-          height="200"
+          class="media"
+          width="150"
+          height="150"
           src="./media/shaka.webp"
           alt="Photo of a shaka">
+        <div class="media">
+          <figure >
+            <figcaption >My favorite audio:</figcaption>
+            <audio id="audio" controls src="./media/collapse.mp3"></audio>
+        </figure>
+        </div>
       </section>
     </main>
     
     <footer>
       <hr class="break">
 
-      <details>
+      <details open>
         <summary>What are your thoughts on <i>vibe coding</i>?</summary>
 
         <form>
@@ -95,14 +97,14 @@
           <br>
           <textarea id="story" name="story" rows="5" cols="33"></textarea>
           <br>
-          <fieldset>
+          <fieldset class="field-select">
             <legend>Did you stay the whole meeting?</legend>
             <input type="radio">
             <label>Yes</label><br>
             <input type="radio">
             <label>No</label><br>
           </fieldset>
-          <fieldset>
+          <fieldset class="field-select">
             <legend>Choose your favorite LLMs</legend>
             <input type="checkbox">
             <label>ChatGPT</label><br>
@@ -136,7 +138,9 @@
           </datalist>
 
           <br>
-          <button type="submit">Submit</button>
+          <div class="button-container">
+            <button class="button" type="submit">Submit</button>
+          </div>
         </form>
           
       </details>
