@@ -1,3 +1,10 @@
+* {
+    font-family: 'Courier New';
+}
+
+main h1, h2, h3 { 
+    font-family:'Gill Sans'; 
+}
 
 .saira-stencil-cool_font {
     font-family: "Saira Stencil", sans-serif;
@@ -32,7 +39,7 @@
     padding: 0.5rem;
 }
 
-.button {
+button {
     border-color: gold;
     border-radius: 8px;
     border-width: 2px;
@@ -95,7 +102,37 @@ button:active{
 
 #form-grid {
     display: grid;
-    grid-template-columns: 300px 300px;
+    grid-template-columns: 40%  40%;
     row-gap: 10px;
     column-gap: 5px;
+}
+
+section:has(img) { 
+    border: 3px solid rgb(20, 237, 20); 
+}
+
+ul > li {
+    font-family: 'Lucida Sans';
+}
+
+br + textarea {
+    font-family:'Segoe UI';
+}
+
+legend ~ label {
+    font-family: 'Trebuchet MS';
+}
+
+h1.saira-stencil-cool_font {
+    font-variant: small-caps;
+}
+
+.field-select {
+    legend {
+        font-weight: 1000;
+    }
+    :hover{
+        background: hsl(214, 88%, 64%);
+        border-radius: 10px
+    }
 }
