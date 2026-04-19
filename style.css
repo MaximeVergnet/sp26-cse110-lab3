@@ -46,7 +46,7 @@ button {
 }
 
 
-@media (hover: hover) {
+@media (hover: hover) { /* Only does button hover if supported */
   button:hover {
     color: rgb(216, 185, 12);
     background: black;
@@ -105,7 +105,7 @@ button:active{
     column-gap: 5px;
 }
 
-section:has(img) { 
+section:has(img) { /* Helps locate image */
     border: 3px solid rgb(20, 237, 20); 
 }
 
